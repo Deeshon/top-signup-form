@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
     <title>Sign up | Workspace</title>
 </head>
 <body>
@@ -19,18 +20,20 @@
         <div class="form">
             <form>
                 <div>
-                    <div><input type="text" placeholder="FIRST NAME"></div>
-                    <br><br>
-                    <div><input type="email" placeholder="EMAIL"></div>
-                    <br><br>
-                    <div><input type="password" placeholder="PASSWORD"></div>
+                    <div><input type="text" placeholder="FIRST NAME" class="first-name"></div>
+                    <p style="color: red; font-size: smaller; opacity: 0;" id="first-name">* This field is required</p>
+                    <div><input type="email" placeholder="E-MAIL" class="email"></div>
+                    <p style="color: red; font-size: smaller; opacity: 0;" id="email">* This field is required</p>
+                    <div><input type="password" class="password" placeholder="PASSWORD"></div>
+                    <p style="color: red; font-size: smaller; opacity: 0;" id="password">* This field is required</p>
                 </div>
                 <div>
-                    <div><input type="text" placeholder="LAST NAME"></div>
-                    <br><br>
-                    <div><input type="text" placeholder="PHONE"></div>
-                    <br><br>
-                    <div><input type="password" placeholder="CONFIRM PASSWORD"></div>
+                    <div><input type="text" placeholder="LAST NAME" class="last-name"></div>
+                    <p style="color: red; font-size: smaller; opacity: 0;" id="last-name">* This field is required</p>
+                    <div><input type="text" placeholder="PHONE" class="phone"></div>
+                    <p style="color: red; font-size: smaller; opacity: 0;" id="phone">* This field is required</p>
+                    <div><input type="password" class="confirm-password" placeholder="CONFIRM PASSWORD"></div>
+                    <p style="color: red; font-size: smaller; opacity: 0;" id="confirm-password">* This field is required</p>
                 </div>
             </form>
             <br>
